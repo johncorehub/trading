@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- title -->
+    <title>Golden Income</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all-fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body class="home-3 bg-2">
+
+    <!-- preloader -->
+    <div class="preloader">
+        <div class="loader-ripple">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- preloader end -->
+
+
+    <!-- header area -->
+    <header class="header">
+        <div class="main-navigation">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/logo/GI logo.svg" alt="logo">
+                    </a>
+                    <div class="mobile-menu-right">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-btn-icon"><i class="far fa-bars"></i></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="main_nav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index-3.html">Home</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Pages</a>
+                                <ul class="dropdown-menu fade-down">
+                                    <li><a class="dropdown-item" href="tools.html">Tools</a></li>
+                                    <li><a class="dropdown-item" href="glossary.html">Glossary</a></li>
+                                    <li><a class="dropdown-item" href="calender.html">Calender</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Account</a>
+                                <ul class="dropdown-menu fade-down">
+                                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                                    <li><a class="dropdown-item" href="register.html">Register</a></li>
+                                    <li><a class="dropdown-item" href="forgot-password.html">Forgot Password</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                        </ul>
+                        <div class="header-nav-right">
+                            <div class="header-btn">
+                                <a href="#" class="theme-btn mt-2">Get in touch<i class="far fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- header area end -->
+
+    <main class="main">
+        <div class="site-breadcrumb">
+            <div class="container">
+                <h2 class="breadcrumb-title">Pip Value Calculator</h2>
+                <ul class="breadcrumb-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">Tools</li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="py-120">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="site-heading text-center mb-4">
+                            <span class="site-title-tagline">Forex Tool</span>
+                            <h2 class="site-title" data-watermark="pip">Pip Value Calculator</h2>
+                            <p>Calculate the monetary value of a single pip for your chosen currency pair and trade size. Essential for risk management!</p>
+                        </div>
+                        <div class="card p-4 shadow">
+                            <div class="pip-calculator-container">
+                                <div class="form-group mb-3">
+                                    <label for="calcPair">Currency Pair:</label>
+                                    <select id="calcPair" class="form-control">
+                                        <option value="EURUSD">EUR/USD</option>
+                                        <option value="GBPUSD">GBP/USD</option>
+                                        <option value="USDJPY">USD/JPY</option>
+                                        <option value="AUDUSD">AUD/USD</option>
+                                        <option value="NZDUSD">NZD/USD</option>
+                                        <option value="USDCAD">USD/CAD</option>
+                                        <option value="USDCHF">USD/CHF</option>
+                                        <option value="EURJPY">EUR/JPY</option>
+                                        <option value="GBPJPY">GBP/JPY</option>
+                                    </select>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label for="calcLots">Trade Size (Standard Lots):</label>
+                                    <input type="number" id="calcLots" class="form-control" value="0.1" min="0.01" step="0.01">
+                                    <small>1 standard lot = 100,000 units. 0.1 lot = 10,000 units (mini-lot). 0.01 lot = 1,000 units (micro-lot).</small>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label for="calcAccountCurrency">Account Currency:</label>
+                                    <select id="calcAccountCurrency" class="form-control">
+                                        <option value="USD">USD</option>
+                                        <option value="EUR">EUR</option>
+                                        <option value="GBP">GBP</option>
+                                        <option value="JPY">JPY</option>
+                                        <option value="AUD">AUD</option>
+                                        <option value="CAD">CAD</option>
+                                        <option value="CHF">CHF</option>
+                                        <option value="INR">INR</option>
+                                    </select>
+                                </div>
+                                <button class="theme-btn w-100" onclick="calculatePipValue()" type="button">Calculate Pip Value</button>
+                                <div class="result-box mt-4 text-center">
+                                    <h3>Result:</h3>
+                                    <p id="pipValueResult">Enter values and click 'Calculate'.</p>
+                                </div>
+                                <p class="small-text mt-2">Note: Calculations are based on simplified assumptions for demo purposes. Real-time rates can vary. For exact values, consult your broker's platform.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer area -->
+    <footer class="footer-area">
+        <div class="footer-widget">
+            <div class="container">
+                <div class="row footer-widget-wrapper pt-100 pb-70">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer-widget-box about-us">
+                            <a href="#" class="footer-logo">
+                                <img src="assets/img/logo/logo.png" alt="">
+                            </a>
+                            <p class="mb-3">
+                                We are many variations of passages available but the majority have suffered alteration in some form by injected humour words believable.
+                            </p>
+                            <ul class="footer-contact">
+                                <li><a href="tel:+21236547898"><i class="far fa-phone"></i>+2 123 654 7898</a></li>
+                                <li><i class="far fa-map-marker-alt"></i>25/B Milford Road, New York</li>
+                                <li><a href="#"><i class="far fa-envelope"></i>[email&#160;protected]</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-2">
+                        <div class="footer-widget-box list">
+                            <h4 class="footer-widget-title">Quick Links</h4>
+                            <ul class="footer-list">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Referral Program</a></li>
+                                <li><a href="#">Terms Of Service</a></li>
+                                <li><a href="#">Privacy policy</a></li>
+                                <li><a href="#">Tranding Fee</a></li>
+                                <li><a href="#">Affiliate Program</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer-widget-box list">
+                            <!-- <h4 class="footer-widget-title">Our Support</h4>
+                            <ul class="footer-list">
+                                <li><a href="#">FAQ's</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">API Documentation</a></li>
+                                <li><a href="#">User Feedback</a></li>
+                                <li><a href="#">Live Chat</a></li>
+                                <li><a href="#">Help Center</a></li>
+                            </ul> -->
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer-widget-box list">
+                            <h4 class="footer-widget-title">Newsletter</h4>
+                            <div class="footer-newsletter">
+                                <p>Subscribe Our Newsletter To Get Latest Update And News</p>
+                                <div class="subscribe-form">
+                                    <form action="#">
+                                        <input type="email" class="form-control" placeholder="Your Email">
+                                        <button class="theme-btn" type="submit">
+                                            Subscribe Now <i class="far fa-paper-plane"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 align-self-center">
+                        <p class="copyright-text">
+                            &copy; Copyright <span id="date"></span> <a href="#"> CRYPTEX </a> All Rights Reserved.
+                        </p>
+                    </div>
+                    <div class="col-md-6 align-self-center">
+                        <ul class="footer-social">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-x-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end -->
+
+    <!-- scheme-switcher -->
+    <div class="scheme-switcher">
+        <div class="switch-btn go-dark-btn"><i class="fa-solid fa-moon"></i></div>
+        <div class="switch-btn go-light-btn"><i class="fa-solid fa-sun"></i></div>
+    </div>
+
+
+    <!-- scroll-top -->
+    <a href="#" id="scroll-top"><i class="far fa-arrow-up"></i></a>
+    <!-- scroll-top end -->
+
+
+    <!-- js -->
+    <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/modernizr.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/jquery.appear.min.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/counter-up.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/apexcharts.min.js"></script>
+    <script src="assets/js/chart.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+</html>
