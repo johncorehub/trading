@@ -37,7 +37,7 @@ body {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: sans-serif;
   font-style: normal;
   font-size: 16px;
   font-weight: normal;
@@ -85,7 +85,7 @@ h6 {
   color: #0A0C1C;
   margin: 0px;
   font-weight: 600;
-  font-family: 'Share Tech Mono', monospace;
+  font-family: sans-serif;
   line-height: 1.2;
 }
 
@@ -885,7 +885,7 @@ nav menu css
     font-size: 17px;
     font-weight: 600;
     color: #fff;
-    font-family: 'Share Tech Mono', monospace;
+    font-family: sans-serif;
     text-transform: capitalize;
   }
 
@@ -922,7 +922,7 @@ nav menu css
     font-weight: 600;
     padding: 10px 0px 10px 20px;
     color: #fff;
-    font-family: 'Share Tech Mono', monospace;
+    font-family: sans-serif;
     position: relative;
     text-transform: capitalize;
     transition: all .5s ease-in-out;
@@ -2023,7 +2023,7 @@ compare css
 
 .compare-wrapper .nav .nav-link{
   color: #fff;
-  font-family: 'Share Tech Mono', monospace;
+  font-family: sans-serif;
   font-weight: bold;
   border-radius: 10px;
 }
